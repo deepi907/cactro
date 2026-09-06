@@ -22,9 +22,9 @@ function App() {
         (currency) => currency !== base
       );
 
-      const response = await fetch(
-        `/api/rates?base=${base}&symbols=${symbols.join(",")}`
-      );
+    const response = await fetch(
+  `https://cactro-7h0b.onrender.com/api/rates?base=${base}&symbols=${symbols.join(",")}`
+);
 
       const data = await response.json();
 
